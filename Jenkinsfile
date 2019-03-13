@@ -4,6 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'npm --version'
+                sh 'node --version'
+                sh 'nvm --version'
                 sh 'echo Hello Jenkins'
             }
         }
